@@ -1,0 +1,34 @@
+order_id -> magic_id + ea policy_id 
+position -> 
+Policy_ID-> init 0
+	policy
+
+ENUM_ORDER_TYPE   m_type;
+class CPositionInfo : public CObject
+  {
+protected:
+   ENUM_POSITION_TYPE m_type;
+   double            m_volume;
+   double            m_price;
+   double            m_stop_loss;
+   double            m_take_profit;
+   ENUM_POLICY_ID    m_policy;
+   int			
+
+public:
+   ulong             Ticket(void) const;
+   bool              SelectByTicket(const ulong ticket);
+}
+
+enum ENUM_POLICY_ID
+  {
+   POLICY_NO_CHANGE 		 =0,
+   POLICY_HR2MIN_REVERSE_PROTECT =1,
+   POLICY_DAY2MIN_REVERSE_PROTECT=2,
+   POLICY_MIN2HR_PAIR 		 =3,
+   POLICY_MIN2DAY_PAIR 		 =4,
+   POLICY_MIN_TO_HR_EXTERN 	 =5,
+   POLICY_MIN_TO_DAY_EXTERN 	 =6
+  };
+
+TakeProfit
