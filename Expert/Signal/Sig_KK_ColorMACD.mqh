@@ -7,10 +7,10 @@
 // wizard description start
 //+------------------------------------------------------------------+
 //| Description of the class                                         |
-//| Title=Signal of the 'Custom Indicator' indicator                 |
+//| Title=Signal of Indicator 'ColorMACD'                            |
 //| Type=SignalAdvanced                                              |
-//| Name=MyCustomIndicator                                           |
-//| ShortName=MyCustomIndicator                                      |
+//| Name=KK_ColorMACD                                                |
+//| ShortName=KK_ColorMACDIndicator                                      |
 //| Class=CSignalMyCustInd                                           |
 //| Page=signal_envelopes                                            |
 //| Parameter=PeriodFast,int,12,Period of fast EMA                   |
@@ -139,9 +139,9 @@ bool CSignalMyCustInd::InitMyCustomIndicator(CIndicators *indicators)
      }
 //--- set parameters of the indicator
    MqlParam parameters[4];
-//---
+//---C34D61\MQL5\Indicators\KK_indicators
    parameters[0].type=TYPE_STRING;
-   parameters[0].string_value="Examples\\MACD.ex5";
+   parameters[0].string_value="KK_indicators\\ColorMACD.ex5";
    parameters[1].type=TYPE_INT;
    parameters[1].integer_value=m_period_fast;
    parameters[2].type=TYPE_INT;
