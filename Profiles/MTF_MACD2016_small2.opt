@@ -1,0 +1,41 @@
+; saved on 2020.06.09 18:07:36
+; this file contains input parameters for testing/optimizing MTF_MACD3 expert advisor
+; to use it in the strategy tester, click Load in the context menu of the Inputs tab
+;
+Expert_Title=Dual TF MACD (1HR ,10mins)
+Op_Period_Big=16385||0||0||49153||N
+Op_Period_Small=10||0||0||49153||N
+TimeOut_Min_Small=58||10||2||90||N
+TimeOut_Min_Big=200||200||3||400||N
+; Policy Time Frame Policy:: 3 兩組都開獨立 4 Small for prdict
+Op_Period_Policy=2||1||1||5||N
+Op_RISK_SL_Policy=3||0||1||3||N
+Money_Risk_Percent=0.003||0.003||0.000300||0.030000||N
+Money_FixLots_Big=0||0||0.000000||0.000000||N
+Money_FixLots_Small=0||0||0.000000||0.000000||N
+; Signal Daul MACD
+Signal_MACD_Applied=1||1||0||7||N
+Big_MACD_Fast_Sg=32||12||1||300||N
+Big_MACD_Slow_Sg=61||24||1||660||N
+Big_MACD_Signal_Sg=389||9||1||800||N
+Small_MACD_Fast_Sg=26||12||2||120||N
+Samll_MACD_Slow_Sg=69||24||3||240||N
+Small_MACD_Signal_Sg=21||15||1||28||N
+; RISK Control --Money Size & Trailing
+Trailing_ParabolicSAR_Step=0.02||0.02||0.002000||0.200000||N
+Trailing_ParabolicSAR_Maximum=0.2||0.2||0.020000||2.000000||N
+Trailing_DefGroup=1||1||1||10||N
+Big_ATR_SL_Factor=2.55||0.8||0.350000||35.000000||N
+Big_SL_MinPiP_Risk=340||100||1||800||N
+Big_TK_Risk=10865||2050||205.000000||20500.000000||N
+Big_ATR_TP_Factor=20||20||2.000000||200.000000||N
+Small_ATR_SL_Factor=2.0||2.0||0.3||14.500000||Y
+Small_SL_MinPiP_Risk=180||65||5||200||Y
+Small_TK_Risk=330||35||5||1600||Y
+Small_ATR_TP_Factor=10||10||1.000000||100.000000||Y
+; Signal filter notused
+Signal_Expiration=4||4||1||40||N
+Signal_PriceLevel=0||0||0.000000||0.000000||N
+Signal_MACD_Weight=1||1||0.100000||10.000000||N
+Signal_ThresholdOpen=10||10||1||100||N
+Signal_ThresholdClose=10||10||1||100||N
